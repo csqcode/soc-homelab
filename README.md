@@ -30,10 +30,10 @@ This lab was designed with a primary focus on Splunk analysis. Targets are weake
 | Dynamic Malware Analysis | Process tree analysis, Network callback detection, persistence observation | Sysmon | Planned |
 
 ## Repo Structure
-- scenarios/ - Contains folders that are categorized by the attacks they simulate
-- spl/ - Contains folders with Splunk alerts and searches
-- rules/ - Contains folders with Suricata rules
-- diagrams/ - Contains diagrams of the lab itself and the various attacks
+- [scenarios/](scenarios/) - Contains folders that are categorized by the attacks they simulate
+- [spl/](spl/) - Contains folders with Splunk alerts and searches
+- [rules/](rules/) - Contains folders with Suricata rules
+- [diagrams/](diagrams/) - Contains diagrams of the lab itself and the various attacks
 
 ## Key Detection Engineering Decisions
 1. Skipping out on more advanced attacks (Mimikatz, Bloodhound) in favor of more realistic movement - I initially planned to have a more extensive AD attack chain, but I realized complexity for the sake of analysis is not always useful. An attacker is less likely to prolong their attack using complex tools if they could just use admin privileges to directly access data. 
