@@ -10,7 +10,7 @@
   - jcyber (Nonprivileged user on Windows 11)
 
 ## Detection Stack Baseline
-- Suricata on Porxmox host, logging to eve.json
+- Suricata on Proxmox host, logging to eve.json
 - Splunk Free (500MB/day limit) with cron scheduling used for alerts
 - Sysmon + Universal Forwarder used on Windows 11 and DC. SwiftOnSecuirty baseline config
   - Key IDs collected: 1, 3, 4, 10, 11
