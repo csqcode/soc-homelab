@@ -8,6 +8,10 @@
   - j.admin (Domain Admin)
   - svc_sql (Domain user, SPN, local admin on Windows 11)
   - jcyber (Nonprivileged user on Windows 11)
+- Data: sensitive.txt
+  - Stored on Windows 11 under j.admin's account
+  - Placed there via RDP
+  - Attacker's ultimate goal
 
 ## Detection Stack Baseline
 - Suricata on Proxmox host, logging to eve.json
