@@ -1,3 +1,3 @@
-## 00 - LLMNR Poisoning
+## 01 - LLMNR Poisoning
 
 **MITRE ATT&CK:** S0174 - Responder
