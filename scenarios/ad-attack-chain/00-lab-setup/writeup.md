@@ -6,7 +6,7 @@
 - Subnet: 10.10.10.0/24
 - Key Accounts and their roles
   - j.admin (Domain Admin)
-  - svc_sql (domain user, SPN, local admin on Windows 11)
+  - svc_sql (Domain user, SPN, local admin on Windows 11)
   - jcyber (Nonprivileged user on Windows 11)
 
 ## Detection Stack Baseline
