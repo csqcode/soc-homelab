@@ -27,3 +27,9 @@
 | WDigest | Enabled | Registry | Enabled to allow for Mimikatz use in future scenarios |
 | RC4 Kerberos | Permitted | Security Options --> Network Security: Configure Encryption Types | Enabled to allow for Kerberoasting |
 | Defender | Disabled | Admin Templates --> Windows Components --> Microsoft Defender Antivirus | Disabled to allow for Sharphound or malware use in future scenarios |
+
+## Backup Process
+- Backups of individual target VMs were taken immediately before starting any attacks. They can be restored after future sessions to bring the lab back to a vulnerable, untouched state after a lengthy attack.
+
+## Real-World Application
+- In a real environment, none of the aforementioned controls would need to be set in the manner reflected in this lab. These settings are meant to create an insecurity that is intentional and instructive, not a misunderstanding of best practices.
