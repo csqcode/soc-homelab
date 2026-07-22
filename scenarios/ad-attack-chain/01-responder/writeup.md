@@ -24,13 +24,19 @@ Responder is used to spoof a name resolution source, providing the NTLM hashes t
    - ```sudo responder -I [interface] -w -v```
 2. On Windows 11, go to file explorer and search for a hostname that doesn't exist
    - ex. \\\NEEDFILES\
+   - After pressing Enter, the window will respond: "Access is denied"
 3. Enter credentials into Windows Security window
-4. Look at Kali for username and hash
-5. Use john or hashcat to crack
+<img width="288" height="236" alt="Windows_Responder" src="https://github.com/user-attachments/assets/9886bacc-110e-42c5-b5c3-c64dfc0ee2d4" />
+
+5. Look at Kali for username and hash
+6. Use john or hashcat to crack
    - ```
         john hash.txt
         john --show hash.txt
       ```
+<img width="223" height="59" alt="Kali_LLMNR" src="https://github.com/user-attachments/assets/61bd4097-661c-4d75-8386-493c9e665bfc" />
+
+
 ---
 
 ## Explanation
@@ -66,6 +72,8 @@ alert udp any 137 -> any 137 (msg:"NBT-NS Response Packet Detected, Possible NBT
 ---
 
 ## Investigation Walkthrough
+<img width="490" height="305" alt="Splunk_LLMNR" src="https://github.com/user-attachments/assets/7db164be-25c9-4512-a091-8bfe76315780" />
+
 - If I received this alert in a workspace, I would likely first check any relevent dashboard panels to gain a better understanding of the alert. Moving on to the actual alert, I would see if the packet was allowed/denied, the severity, as well as the signature. I would then look at the Destination IP, Interface, and Source IP to get a better idea of where the packet was sent and where it came from. I might look into the Destination and see if it was a random user, or someone with administrator privileges. I could then research the Source, their role, and if Suricata generated any matching alerts about a running Kali Linux instance (This was detected so much I had to suppress the alert).
 
 ---
