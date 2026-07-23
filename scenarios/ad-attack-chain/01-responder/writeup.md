@@ -26,15 +26,16 @@ Use responder to spoof a name resolution source, providing the NTLM hashes that 
    - ex. \\\NEEDFILES\
    - After pressing Enter, the window will respond: "Access is denied"
 3. Enter credentials into Windows Security window
-<img width="288" height="236" alt="Windows_Responder" src="https://github.com/user-attachments/assets/9886bacc-110e-42c5-b5c3-c64dfc0ee2d4" />
+   - <img width="288" height="236" alt="Windows_Responder" src="https://github.com/user-attachments/assets/9886bacc-110e-42c5-b5c3-c64dfc0ee2d4" />
 
 5. Look at Kali for username and hash
-6. Use john or hashcat to crack
+   - <img width="445" height="118" alt="Kali_LLMNR" src="https://github.com/user-attachments/assets/a965a260-8e38-457b-b010-07510485caca" />
+
+7. Use john or hashcat to crack
    - ```
         john hash.txt
         john --show hash.txt
       ```
-<img width="223" height="59" alt="Kali_LLMNR" src="https://github.com/user-attachments/assets/61bd4097-661c-4d75-8386-493c9e665bfc" />
 
 
 ---
