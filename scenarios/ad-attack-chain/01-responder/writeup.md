@@ -1,6 +1,6 @@
 ## 01 - LLMNR Poisoning
 
-**MITRE ATT&CK:** S0174 - Responder\
+**MITRE ATT&CK:** T1557.001 - Adversary-in-the-Middle: Name Resolution Poisoning and SMB Relay\
 **Status:** Complete
 
 ---
