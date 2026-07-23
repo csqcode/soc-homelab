@@ -7,7 +7,7 @@
 
 ## Objective
 
-Responder is used to spoof a name resolution source, providing the NTLM hashes that allow for intial access to a system. In a real scenario, an attacker would use this to gain footing in an Active Directory.
+Use responder to spoof a name resolution source, providing the NTLM hashes that allow for intial access to a system.
 
 ---
 
